@@ -225,8 +225,60 @@ header{
     background-color:  var(--white);
     transition: 5s;
 }
-
-@media (max-width: 480px){
+@media (min-width: 451px) and (max-width: 900px){
+    body{
+        font-size: 90%;
+    }
+    header{
+        padding:2rem 5%;
+        background-image: url(/images/mobile/image-hero.jpg);
+        height: 95vh;
+        display:flex;
+    }
+    .logo{
+         align-self: flex-start;
+    }
+    .header{
+        padding:2rem 5%;
+        font-size: 30px;
+        width:90%;
+        min-width: 80vw;
+        margin: auto;
+        justify-items: center;
+    }
+    .intro{
+        display:block;
+    }
+    .intro-img img{
+        width:100%;
+        object-fit: contain;
+    }
+    .intro-box{
+        text-align: center;
+    }
+    .contents{
+        text-align: center;
+        display:block;
+    }
+    .button{
+        margin:auto;
+        margin-top: 15px;
+    }
+    .cont{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 350px);
+    }
+    .footer{
+        justify-content: center;
+    }
+    .logos{
+        align-self: center;
+    }
+    .right{
+        align-self: center;
+    }
+} 
+@media (max-width: 450px){
     body{
         font-size: 50%;
     }
